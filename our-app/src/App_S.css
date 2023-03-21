@@ -1,0 +1,48 @@
+.Home_carousel_image{
+    height: 600px!important;
+}
+.topContainer{
+        display: flex;
+        flex-direction: row;
+      }
+.center {
+        margin: auto;
+        width: 60%;
+        color:white;
+        padding: 10px;
+        text-align: center;
+      }
+.icon{
+    padding:10px;
+    display: inline-block;
+}
+.listLink{
+    color:white;
+}
+.icon :hover {
+    color:  #ff4c68;
+  }
+.listColor :hover {
+    color:  #ff4c68;
+  }
+  .footerTitle{
+    height:40px;
+    text-align:center;
+    color:white;
+    margin-top:50px;
+  }
+  .footerItems{
+    height:50px;
+    text-align:center;
+    color:white;
+  }
+  .tableSpacing
+  {
+    width: 1300px;
+    padding:10px;
+    
+  }
+  .linkColor{
+    color:white;
+    
+  }
