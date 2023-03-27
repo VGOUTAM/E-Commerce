@@ -16,7 +16,7 @@ function EthComp(props)
     };
     return(
       <div className="row p-2 border rounded mt-2" style={{backgroundColor:"#DCDCDC"}}>
-      <div className="col-md-3 mt-1"><img className="img-fluid img-responsive rounded product-image" src={props.image} alt='Product image'/></div>
+      <div className="col-md-3 mt-1"><img className="img-fluid img-responsive rounded product-image" src={props.image} alt=''/></div>
       <div className="col-md-6 mt-1">
           <h5>{props.prodName}</h5>
           <div className="d-flex flex-row">
