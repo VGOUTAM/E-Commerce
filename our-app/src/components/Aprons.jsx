@@ -2,7 +2,7 @@ import React from "react";
 import { MDBContainer} from "mdb-react-ui-kit";
 import "../App.css";
 import Navbar from './Navbar'
-import EthComp from "./Ethnics_component";
+import EthComp from "./Prod_Card";
 import apron_array from "./WomenApron_Array";
 
 

@@ -2,8 +2,8 @@ import React from "react";
 import {MDBContainer} from "mdb-react-ui-kit";
 import "../App.css";
 import Navbar from './Navbar'
-import EthComp from "./Ethnics_component";
-import BridalJewellery_array from "./BridalJewellery_Array";
+import EthComp from "./Prod_Card";
+  import BridalJewellery_array from "./BridalJewellery_Array";
 
 
 function Ethnics() {

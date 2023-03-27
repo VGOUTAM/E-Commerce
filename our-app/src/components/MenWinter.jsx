@@ -2,7 +2,7 @@ import React from "react";
 import {MDBContainer} from "mdb-react-ui-kit";
 import "../App.css";
 import Navbar from './Navbar'
-import EthComp from "./Ethnics_component";
+import EthComp from "./Prod_Card";
 import MenWinter_Array from "./MenWinter_Array";
 
 
@@ -10,8 +10,10 @@ function Men_winterWear() {
   return (
     <div className='paddingDueToNavbar'>
       <Navbar />
-      <MDBContainer fluid>
-        {MenWinter_Array.map(object=>{
+      <div class="container mt-5 mb-5">
+    <div class="d-flex justify-content-center row">
+        <div class="col-md-10">
+            {MenWinter_Array.map(object=>{
           return(
             <EthComp 
             image={object.image} 
@@ -28,9 +30,11 @@ function Men_winterWear() {
             />
           )
           })
-        }
-          
-      </MDBContainer>
+        } 
+        </div>
+    </div>
+</div>
+
     </div>
 
     
