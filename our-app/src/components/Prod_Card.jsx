@@ -49,17 +49,3 @@ function EthComp(props)
 }
 
 export default EthComp;
-
-{/* <EthComp 
-            image={object.image} 
-            prodName={object.prodName} 
-            span1={object.span1}
-            span2={object.span2}
-            span3={object.span3}
-            span4={object.span4}
-            span5={object.span5}
-            span6={object.span6}
-            para={object.para}
-            prevAmount={object.prevAmount}
-            presAmount={object.presAmount}
-            /> */}
