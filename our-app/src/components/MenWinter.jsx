@@ -1,5 +1,4 @@
 import React from "react";
-import {MDBContainer} from "mdb-react-ui-kit";
 import "../App.css";
 import Navbar from './Navbar'
 import EthComp from "./Prod_Card";
