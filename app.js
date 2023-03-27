@@ -24,7 +24,7 @@ const userSchema= new mongoose.Schema({
 });
 
 
-const User = mongoose.model("User",userSchema);
+const User = mongoose.model("Host",userSchema);
 
 app.use(express.static("public"));
 app.set('view engine','ejs');
