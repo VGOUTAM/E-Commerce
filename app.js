@@ -68,6 +68,10 @@ app.post("/signup",function(req,res){
 
 });
 
+app.get("/check", (req, res) => {
+  res.send("server running");
+})
+
 
 
 // app.post("/register",function(req,res){
