@@ -1,4 +1,4 @@
-# sampleRep
+# E-commerce website
 It is an E-commerce website (still under build) . The frontend has been created using ReactJS.
 Several concepts of ReactJS hae been implemented in it.
 The sites contains a authentication feature enabled using "bcrypt" provided by NodeJS.
