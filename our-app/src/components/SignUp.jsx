@@ -3,7 +3,6 @@ import '../App.css'
 import Navbar from './Navbar'
 // import { useState } from 'react';
 // const axios = require("axios");
-import axios from "axios";
 // import { resolveComponentProps } from '@mui/base';
 
 function Signup() {

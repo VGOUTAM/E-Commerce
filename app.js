@@ -71,7 +71,6 @@ app.post("/signup", function(req,res){
     });
     
       newUser.save();
-      // window.location.assign("https://www.w3schools.com");
       res.redirect("https://remarkable-licorice-51dfe5.netlify.app/");
     
     });
