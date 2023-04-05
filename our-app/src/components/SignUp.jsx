@@ -2,8 +2,32 @@ import React from 'react';
 import '../App.css'
 import Navbar from './Navbar'
 // import { useState } from 'react';
+// const axios = require("axios");
+import axios from "axios";
+// import { resolveComponentProps } from '@mui/base';
 
 function Signup() {
+
+  // const handleSignUp = () => {
+  //   console.log("handlesignup");
+  //   axios.post("https://backendhost-2auk.onrender.com/signup", {
+  //     name: "sdkjd",
+  //     uname: "chu",
+  //     email: "sdas",
+  //     contact: "2983192",
+  //     password: "1234",
+  //     gender: "male"
+  //   }).then((res) => {
+  //     console.log("sent", res);
+  //   }).catch((err) => console.log(err));
+  // };
+
+  // const dummy = () => {
+  //   console.log("dummy");
+  //   axios.get("/check").then((res) => {
+  //     console.log(res);
+  //   }).catch((err) => console.log(err));
+  // }
   // const [p, setp] = useState();
   // const [text, setText] = useState('');
 
@@ -25,7 +49,8 @@ function Signup() {
       <div class="signupContainer" >
       
       <div class="title">Registration</div>
-      <form action='/signup' method='POST'>
+      {/* <form action='/signup' method='POST'> */}
+      <form action='https://backendhost-2auk.onrender.com/signup' method='POST'>
         <div class="user__details">
           <div class="input__box">
             <span class="details">Full Name</span>
@@ -74,9 +99,10 @@ function Signup() {
             </label>
           </div>
         </div>
-        <button class="button login__submit" type="submit" >
+        <button class="button login__submit">
 					<span class="button__text">Sign Up </span>
 				</button>
+        {/* <button class="button login__submit" onClick={dummy}>dummy</button> */}
       </form>
   </div>
   

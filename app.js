@@ -1,6 +1,8 @@
-require('dotenv').config();                     // for using environment variable protection
+require('dotenv').config();  
+// import axios from "axios";                   // for using environment variable protection
 const express =require("express");
 const bodyParser =require("body-parser");
+// const cors = require("cors");
 
 const mongoose=require("mongoose");
 
@@ -32,6 +34,13 @@ app.use(bodyParser.urlencoded({
   extended:true
 }));
 
+// app.use(cors({ 
+//   origin: "frontend_URL", 
+//   credentials: true 
+//  }));
+
+//  axios.defaults.withCredentials = true;
+
 app.post("/login", function(req,res){
 
   const username=req.body.username;
@@ -49,8 +58,8 @@ app.post("/login", function(req,res){
 ;
 })
 
-app.post("/signup",function(req,res){
-  console.log("Heyy!")  
+app.post("/signup", function(req,res){
+  console.log("Heyy!"); 
   bcrypt.hash(req.body.passw, saltRounds, function(err, hash) {
     const newUser = new User({
       name:req.body.fullname,
@@ -62,10 +71,10 @@ app.post("/signup",function(req,res){
     });
     
       newUser.save();
-      res.redirect("/");
+      // window.location.assign("https://www.w3schools.com");
+      res.redirect("https://remarkable-licorice-51dfe5.netlify.app/");
     
     });
-
 });
 
 app.get("/check", (req, res) => {
