@@ -126,20 +126,14 @@
 // export default App;
 
 import React from 'react';
-
 import Navbar from './Navbar'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GoogleIcon from '@mui/icons-material/Google';
 import PersonIcon from '@mui/icons-material/Person';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
-// import { Link,useNavigate } from 'react-router-dom'
 
 function App() {
-	// const navigate = useNavigate();
-
-	// function navigateHome(){
-	// 	navigate('/')
-	// }
+	
 
   return (
     <div className='paddingDueToNavbar' >
@@ -147,7 +141,7 @@ function App() {
       <div class="loginContainer">
 	<div class="screen">
 		<div class="screen__content">
-			<form class="login" action='/login' method='POST'>
+			<form class="login" action='https://backendhost-2auk.onrender.com/login' method='POST'>
 				<div class="login__field">
 				<div className="icon"><PersonIcon /></div>
 					<input type="text" class="login__input" placeholder="User name / Email" name='username'/>

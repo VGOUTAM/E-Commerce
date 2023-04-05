@@ -42,19 +42,17 @@ app.use(bodyParser.urlencoded({
 //  axios.defaults.withCredentials = true;
 
 app.post("/login", function(req,res){
-
   const username=req.body.username;
   const password=req.body.password;
   
     User.findOne({uname:username, password:password })
       .then((docs)=>{
-        res.redirect("/")
+        res.redirect("https://remarkable-licorice-51dfe5.netlify.app/")
       })
       .catch((err)=>{
           console.log(err);
           // res.redirect("/login")
-      });
-    
+      });  
 ;
 })
 
