@@ -11,7 +11,7 @@ function Logout()
     //sending data to backend to /logout route using promises
     useEffect(()=>{
         fetch('https://backendhost-2auk.onrender.com/logout',{
-                mode:'cors' ,
+                mode:'no-cors' ,
                 method: "GET",
                 headers: { 
                 Accept: "application/json",
