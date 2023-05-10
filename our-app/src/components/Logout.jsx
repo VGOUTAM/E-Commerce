@@ -1,7 +1,6 @@
 import React,{useEffect, useContext} from 'react'
 import {useNavigate} from 'react-router-dom';
 import {userContext} from  '../App.jsx'
-const cors=require("cors");
 
 function Logout()
 {
