@@ -2,6 +2,8 @@ import React from 'react';
 import '../App.css'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
+
 
 function Signup() {
   
@@ -52,14 +54,14 @@ function Signup() {
 		  }
       else{        
         alert("Registration Successfull ")			
-        navigate("https://remarkable-licorice-51dfe5.netlify.app/");
+        navigate("/");
       }
   }
 
   return (
 
     <div className='bodyOfSignup' >
-      {/* <Navbar /> */}
+      <Navbar />
       <div class="signupContainer" >
       
       <div class="title">Registration</div>

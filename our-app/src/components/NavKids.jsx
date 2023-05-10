@@ -7,11 +7,13 @@ import KidsBoysRowTable from "./Kids_BoysRow";
 import {momBabyImage} from "./KidsSection_ImagesArray";
 import BabyProducts from "./KidsSection_Mombaby.jsx";
 import ImgSample from "./ImageSample.jsx";
+import Navbar from './Navbar';
+
 
 function Kids(){
     return(
         <div className='paddingDueToNavbar'>
-            {/* <Navbar /> */}
+            <Navbar />
          <KidsMainCarousel />
      <ImgSample source={after_MainCarousel}/>
      <KidsGirlsRowTable />

@@ -6,11 +6,13 @@ import Bridal from "./WomenSection_Bride"
 import Essential from "./WomenSection_Essentials"
 import Assurance from './assurance'
 import Disclaimer from './disclaimer'
+import Navbar from './Navbar';
+
 
 function Women(){
     return(
         <div className='paddingDueToNavbar'>
-            {/* <Navbar /> */}
+            <Navbar />
             <WomenMainCarousel />
             <Makeup/>
             <Bridal />

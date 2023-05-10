@@ -7,13 +7,13 @@ import Assurance from './assurance'
 import Disclaimer from './disclaimer'
 import Design2 from "./HomeDesign2"
 import Design1 from './Home_Design1'
-import Navbar1 from './Navbar';
+import Navbar from './Navbar';
 
 
 function Home() {
   return (
     <div className='paddingDueToNavbar'> 
-    <Navbar1 />
+    <Navbar />
     <Carousel />
     <Design1 />
     <Design2 />

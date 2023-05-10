@@ -18,7 +18,7 @@ function Logout()
                 credentials: "include"
         }).then((res) => {
             dispatch({type: "USER", payload: false})
-            navigate('https://remarkable-licorice-51dfe5.netlify.app/');
+            navigate('/');
             if(!res.status === 200){
                 const error = new Error(res.error)
                 throw error;

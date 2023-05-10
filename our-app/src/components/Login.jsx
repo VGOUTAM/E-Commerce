@@ -5,6 +5,8 @@ import GoogleIcon from '@mui/icons-material/Google';
 import PersonIcon from '@mui/icons-material/Person';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
 import {userContext} from  '../App.jsx'
+import Navbar from './Navbar';
+
 
 function Login() {
 	const {state, dispatch} = useContext(userContext);
@@ -42,12 +44,12 @@ function Login() {
 		else{
 			dispatch({type:"USER",payload:true})
 			alert("Login Successfull ")			
-			navigate("https://remarkable-licorice-51dfe5.netlify.app/");
+			navigate("/");
 		}
 	}
   return (
 	<div className='paddingDueToNavbar' >
-	  {/* <Navbar /> */}
+	  <Navbar />
 	  <div class="loginContainer">
 	<div class="screen">
 		<div class="screen__content">
