@@ -9,7 +9,7 @@ function Logout()
     const navigate = useNavigate();
     //sending data to backend to /logout route using promises
     useEffect(()=>{
-        fetch('/logout',{
+        fetch('https://backendhost-2auk.onrender.com/logout',{
                 method: "GET",
                 headers: { 
                 Accept: "application/json",
@@ -18,7 +18,7 @@ function Logout()
                 credentials: "include"
         }).then((res) => {
             dispatch({type: "USER", payload: false})
-            navigate('/');
+            navigate('https://remarkable-licorice-51dfe5.netlify.app/');
             if(!res.status === 200){
                 const error = new Error(res.error)
                 throw error;

@@ -22,7 +22,7 @@ function Signup() {
   const handleClick= async (e)=> {
     e.preventDefault();
     
-    const res=await fetch('/signup',{
+    const res=await fetch('https://backendhost-2auk.onrender.com/signup',{
       mode : 'cors', 
 			method: "POST",			
 			headers: {
@@ -52,7 +52,7 @@ function Signup() {
 		  }
       else{        
         alert("Registration Successfull ")			
-        navigate("/");
+        navigate("https://remarkable-licorice-51dfe5.netlify.app/");
       }
   }
 

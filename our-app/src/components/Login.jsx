@@ -17,7 +17,7 @@ function Login() {
 		e.preventDefault();
 		console.log("Iam here")
 
-		const res=await fetch("http://localhost:3001/login",{
+		const res=await fetch("https://backendhost-2auk.onrender.com/login",{
 			mode : 'cors', 
 			method: "POST",			
 			headers: {
@@ -42,7 +42,7 @@ function Login() {
 		else{
 			dispatch({type:"USER",payload:true})
 			alert("Login Successfull ")			
-			navigate("/");
+			navigate("https://remarkable-licorice-51dfe5.netlify.app/");
 		}
 	}
   return (
