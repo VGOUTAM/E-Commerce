@@ -28,10 +28,10 @@ function Navbar1() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className='me-auto' >
-              <Link className="categories" to="/men">Men</Link>
-              <Link className="categories" to="/women">Women</Link>
-              <Link className="categories" to="/kids">Kids</Link>
-              <Link className="categories" to="/electronics">Electronics</Link>
+              <Link className="categories" to="/men" style={{textDecoration:"none", color:"grey"}}>Men</Link>
+              <Link className="categories" to="/women" style={{textDecoration:"none", color:"grey"}}>Women</Link>
+              <Link className="categories" to="/kids" style={{textDecoration:"none", color:"grey"}}>Kids</Link>
+              <Link className="categories" to="/electronics" style={{textDecoration:"none", color:"grey"}}>Electronics</Link>
             </Nav>
           </Navbar.Collapse>
           <Navbar.Brand href="/" className='myBrand'>VS Shoppe</Navbar.Brand>
@@ -51,7 +51,7 @@ function Navbar1() {
                 <Dropdown.Item href="#/action-3"><FavoriteIcon /> Wishlist</Dropdown.Item>
                 <Dropdown.Item href="logout"><SettingsIcon /> Settings</Dropdown.Item>
                 <Dropdown.Item href="logout"><HeadsetMicIcon /> Help Centre</Dropdown.Item>
-                <Link to="/logout"><LogoutIcon /> Logout</Link>
+                <Link to="/logout" style={{textDecoration:"none", color:"black"}}><LogoutIcon /> Logout</Link>
 
               </Dropdown.Menu>
             </Dropdown>
@@ -73,17 +73,17 @@ function Navbar1() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className='me-auto' >
-              <Link className="categories" to="/men">Men</Link>
-              <Link className="categories" to="/women">Women</Link>
-              <Link className="categories" to="/kids">Kids</Link>
-              <Link className="categories" to="/electronics">Electronics</Link>
+              <Link className="categories" to="/men" style={{textDecoration:"none", color:"grey"}}>Men</Link>
+              <Link className="categories" to="/women" style={{textDecoration:"none", color:"grey"}}>Women</Link>
+              <Link className="categories" to="/kids" style={{textDecoration:"none", color:"grey"}}>Kids</Link>
+              <Link className="categories" to="/electronics" style={{textDecoration:"none", color:"grey"}}>Electronics</Link>
             </Nav>
           </Navbar.Collapse>
           <Navbar.Brand href="/" className='myBrand'>VS Shoppe</Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-          <NavItem ><Link  className="categories" to="/login">Login</Link></NavItem> 
-          <NavItem ><Link  className="categories" to="/signup">Signup</Link></NavItem>
+          <NavItem ><Link  className="categories" to="/login" style={{marginRight:"10px",marginLeft:'10px', textDecoration:"none", color:"grey"}}>Login</Link></NavItem> 
+          <NavItem ><Link  className="categories" to="/signup" style={{textDecoration:"none", color:"grey"}}>Signup</Link></NavItem>
             </Nav>
           </Navbar.Collapse>
         </Container>
