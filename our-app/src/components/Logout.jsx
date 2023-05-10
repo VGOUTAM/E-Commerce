@@ -4,6 +4,7 @@ import {userContext} from  '../App.jsx'
 
 function Logout()
 {
+    console.log("I am in logout frontend")
     const {state, dispatch} = useContext(userContext);
     console.log(state)
     const navigate = useNavigate();
