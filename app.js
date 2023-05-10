@@ -236,7 +236,7 @@ app.post("/signup", async function(req,res){
 
 
 app.get('/logout',(req, res)=> {
-  console.log(req.body);
+  console.log("Iam in logout route");
   //LOGING OUT IS NOTHING BUT CLEAR THE COOKIE....
   res.clearCookie('jwtoken',{path: '/'})
 
