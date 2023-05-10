@@ -18,7 +18,6 @@ import WomenLingerie from './components/Lingerie'
 import WomenTops from './components/WomenTops'
 import Logout from './components/Logout';
 import {reducer, initialState} from '../src/reducer/UseReducer.js'
-import Navbar1 from './components/Navbar';
 
 export const userContext = createContext();
 
@@ -29,7 +28,6 @@ function App(){
     return(
         <>
         <userContext.Provider value={{state, dispatch}}>
-        <Navbar1 />
         <Routes>
             <Route path= '/' element= {<Home />}  />
             <Route path= 'login' element= {<Login />}  />
