@@ -12,6 +12,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import LogoutIcon from '@mui/icons-material/Logout';
+import {Link} from 'react-router-dom' 
 
 function Navbar1() {
   const {state, dispatch}= useContext(userContext)
@@ -27,10 +28,10 @@ function Navbar1() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className='me-auto' >
-              <Nav.Link className="categories" href="men">Men</Nav.Link>
-              <Nav.Link className="categories" href="women">Women</Nav.Link>
-              <Nav.Link className="categories" href="kids">Kids</Nav.Link>
-              <Nav.Link className="categories" href="electronics">Electronics</Nav.Link>
+              <Link className="categories" to="/men">Men</Link>
+              <Link className="categories" to="/women">Women</Link>
+              <Link className="categories" to="/kids">Kids</Link>
+              <Link className="categories" to="/electronics">Electronics</Link>
             </Nav>
           </Navbar.Collapse>
           <Navbar.Brand href="/" className='myBrand'>VS Shoppe</Navbar.Brand>
@@ -50,7 +51,7 @@ function Navbar1() {
                 <Dropdown.Item href="#/action-3"><FavoriteIcon /> Wishlist</Dropdown.Item>
                 <Dropdown.Item href="logout"><SettingsIcon /> Settings</Dropdown.Item>
                 <Dropdown.Item href="logout"><HeadsetMicIcon /> Help Centre</Dropdown.Item>
-                <Dropdown.Item href="logout"><LogoutIcon /> Logout</Dropdown.Item>
+                <Link to="/logout"><LogoutIcon /> Logout</Link>
 
               </Dropdown.Menu>
             </Dropdown>
@@ -72,19 +73,17 @@ function Navbar1() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className='me-auto' >
-              <Nav.Link className="categories" href="men">Men</Nav.Link>
-              <Nav.Link className="categories" href="women">Women</Nav.Link>
-              <Nav.Link className="categories" href="kids">Kids</Nav.Link>
-              <Nav.Link className="categories" href="electronics">Electronics</Nav.Link>
+              <Link className="categories" to="/men">Men</Link>
+              <Link className="categories" to="/women">Women</Link>
+              <Link className="categories" to="/kids">Kids</Link>
+              <Link className="categories" to="/electronics">Electronics</Link>
             </Nav>
           </Navbar.Collapse>
           <Navbar.Brand href="/" className='myBrand'>VS Shoppe</Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-          <NavItem ><Nav.Link  className="categories" href="login">Login</Nav.Link></NavItem> 
-          <NavItem ><Nav.Link  className="categories" href="signup">Signup</Nav.Link></NavItem>
-          
-          {/* <NavItem ><Nav.Link  className="categories" href="logout">logout</Nav.Link></NavItem> */}
+          <NavItem ><Link  className="categories" to="/login">Login</Link></NavItem> 
+          <NavItem ><Link  className="categories" to="/signup">Signup</Link></NavItem>
             </Nav>
           </Navbar.Collapse>
         </Container>
