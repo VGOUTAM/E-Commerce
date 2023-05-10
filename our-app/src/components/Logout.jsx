@@ -1,6 +1,7 @@
 import React,{useEffect, useContext} from 'react'
 import {useNavigate} from 'react-router-dom';
 import {userContext} from  '../App.jsx'
+const cors=require("cors");
 
 function Logout()
 {
@@ -11,6 +12,7 @@ function Logout()
     //sending data to backend to /logout route using promises
     useEffect(()=>{
         fetch('https://backendhost-2auk.onrender.com/logout',{
+                mode:'cors' ,
                 method: "GET",
                 headers: { 
                 Accept: "application/json",
