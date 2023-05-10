@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar';
 import Footer from "./Footer";
 import KidsMainCarousel from "./Kids_MainCarousel.jsx";
 import {after_MainCarousel} from "./KidsSection_ImagesArray";
@@ -12,7 +11,7 @@ import ImgSample from "./ImageSample.jsx";
 function Kids(){
     return(
         <div className='paddingDueToNavbar'>
-            <Navbar />
+            {/* <Navbar /> */}
          <KidsMainCarousel />
      <ImgSample source={after_MainCarousel}/>
      <KidsGirlsRowTable />

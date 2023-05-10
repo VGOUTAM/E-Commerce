@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar';
 import Footer from './Footer';
 import WomenMainCarousel from "./WomenSection_MainCarousel.jsx";
 import Makeup from "./WomenSection_MakeUp";
@@ -11,7 +10,7 @@ import Disclaimer from './disclaimer'
 function Women(){
     return(
         <div className='paddingDueToNavbar'>
-            <Navbar />
+            {/* <Navbar /> */}
             <WomenMainCarousel />
             <Makeup/>
             <Bridal />

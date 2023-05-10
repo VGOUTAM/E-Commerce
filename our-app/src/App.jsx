@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, useReducer } from 'react';
 import {Routes, Route} from 'react-router-dom'
 import Home from './components/Home'
 import Login from './components/Login'
@@ -16,12 +16,20 @@ import BridalJewellery from './components/BridalJewellery'
 import WomenAprons from './components/Aprons'
 import WomenLingerie from './components/Lingerie'
 import WomenTops from './components/WomenTops'
+import Logout from './components/Logout';
+import {reducer, initialState} from '../src/reducer/UseReducer.js'
+import Navbar1 from './components/Navbar';
 
+export const userContext = createContext();
 
- 
 function App(){
-    
+    // const user = useContext(userContext);
+    const [state, dispatch]= useReducer(reducer, initialState)
+   
     return(
+        <>
+        <userContext.Provider value={{state, dispatch}}>
+        <Navbar1 />
         <Routes>
             <Route path= '/' element= {<Home />}  />
             <Route path= 'login' element= {<Login />}  />
@@ -39,8 +47,11 @@ function App(){
             <Route path= 'aprons' element= {<WomenAprons />}  />
             <Route path= 'lingerie' element= {<WomenLingerie />}  />
             <Route path= 'tops' element= {<WomenTops />}  />
+            <Route path= 'logout' element= {<Logout />}  />
 
         </Routes>
+        </userContext.Provider>
+        </>
     );
 }
 

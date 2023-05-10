@@ -1,6 +1,5 @@
 import React from 'react'
 import Footer from './Footer';
-import Navbar from './Navbar'
 import Image from 'react-bootstrap/Image'
 import Shirt from '../images/Shirt.png'
 import Formals from '../images/Formals.png'
@@ -30,9 +29,9 @@ function Men(){
     return(
         <div className='paddingDueToNavbar'>
         
-            <Navbar />
+            {/* <Navbar /> */}
             <div style={{textAlign:'center', backgroundColor:'grey', padding:'1%', fontSize:'50',fontStyle:'oblique'}}>
-                <h1>Select from our best range of products</h1>
+                <h2 style={{paddingTop:'1%'}}>SELECT FROM OUR BEST RANGE OF PRODUCTS</h2>
             </div>
             
             <div >
@@ -42,13 +41,13 @@ function Men(){
                 <Image href='' src={Ethnic} roundedCircle responsive />
                 </Link>
                 </span>
-                <span><p style={{display:'inline-block'}}>Embrace yourself with the classic ethnic designs</p></span>
+                <span><p className='MenBigWhite' style={{display:'inline-block'}}>Embrace yourself with the classic ethnic designs ...</p></span>
                 </div>
                 
 
                 <AnimationOnScroll animateIn="animate__fadeInDown" >
                 <div className='mendivs' style={{backgroundColor:'black'}}>
-                <span><p style={{display:'inline-block', margin:'10%'}}>Embrace yourself with the classic ethnic designs</p></span>
+                <span><p className='MenBig' style={{display:'inline-block', margin:'10%'}}>For embracing the heat with style ...</p></span>
                 <span style={{marginLeft:'20%'}}><Image href='' src={Shirt} roundedCircle responsive /></span>
                 </div>
                 </AnimationOnScroll>
@@ -59,13 +58,13 @@ function Men(){
                 <Link to='/menformals'>
                 <Image href='' src={Formals} roundedCircle responsive />
                 </Link></span>
-                <span><p style={{display:'inline-block'}}>Embrace yourself with the classic ethnic designs</p></span>
+                <span><p className='MenBigWhite' style={{display:'inline-block'}}>For the core occasions ....</p></span>
                 </div>
                 </AnimationOnScroll>
 
                 <AnimationOnScroll animateIn="animate__fadeInDown" >
                 <div className='mendivs' >
-                <span><p style={{display:'inline-block',margin:'10%'}}>Embrace yourself with the classic ethnic designs</p></span>
+                <span><p className='MenBigWhite' style={{display:'inline-block',margin:'10%'}}>Be hot ...  Go strong....</p></span>
                 <span style={{marginLeft:'20%'}}>
                 <Link to='/winterwear'><Image href='' src={Winter} roundedCircle responsive />
                 </Link>
