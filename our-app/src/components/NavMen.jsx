@@ -20,6 +20,7 @@ import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Assurance from './assurance'
 import Disclaimer from './disclaimer'
+import Navbar1 from './Navbar';
 
 import "../App.css"
 // import { margin } from '@mui/system'
@@ -29,7 +30,7 @@ function Men(){
     return(
         <div className='paddingDueToNavbar'>
         
-            {/* <Navbar /> */}
+        <Navbar1 />
             <div style={{textAlign:'center', backgroundColor:'grey', padding:'1%', fontSize:'50',fontStyle:'oblique'}}>
                 <h2 style={{paddingTop:'1%'}}>SELECT FROM OUR BEST RANGE OF PRODUCTS</h2>
             </div>
