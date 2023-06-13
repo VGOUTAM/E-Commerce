@@ -144,7 +144,7 @@ app.post("/login", async function(req,res){
 
         // TO STORE THE ABOVE GENERATED TOKEN TO COOKIE
         res.cookie("jwtoken",token,{
-          expires: new Date(Date.now() + 60000),
+          expires: new Date(Date.now() + 600000000),
           httpOnly: true
         })
           
