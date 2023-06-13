@@ -35,6 +35,8 @@ function Login() {
 		console.log(data)
 		console.log("This is res.status: ")
 		console.log(res.status);
+		const token = data.token;
+		localStorage.setItem('token',token)
 		if(res.status===400 )
 		{
 			alert("Invalid credentials")

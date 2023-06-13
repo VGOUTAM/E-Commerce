@@ -20,6 +20,65 @@ function Navbar1() {
   console.log("This is navbar")
   console.log(state)
   const RenderNavbar=()=>{
+    
+    useEffect(()=>{
+      console.log("Heyy I in cart's useEffect");
+      const fetchcartItems=async()=> {
+          try{
+              const response=await fetch('/getCartItems',{
+                  method:'GET',
+                  headers: {
+                      Authorization: `Bearer ${localStorage.getItem('token')}`,                        
+                    },
+              });
+              const data=await response.json();
+              console.log("data");
+              console.log(data);
+              if(response.status!==500)
+              {                    
+                setCartItemCount(data.length);
+              }
+              else{
+                  alert("An error occured, please try later")
+              }
+             
+          }catch(err)
+          {
+              alert("An error occured, please try again")
+          }
+      }
+      fetchcartItems();
+  },[cartItemCount]);
+
+  useEffect(()=>{
+    console.log("Heyy I in wishlist's useEffect");
+    const fetchWishlistItems=async()=> {
+        try{
+            const response=await fetch('/getWishlistItems',{
+                method:'GET',
+                headers: {
+                    Authorization: `Bearer ${localStorage.getItem('token')}`,                        
+                  },
+            });
+            const data=await response.json();
+            console.log("data");
+            console.log(data);
+            if(response.status!==500)
+            {                    
+              setWishlistItemCount(data.length);
+            }
+            else{
+                alert("An error occured, please try later")
+            }
+           
+        }catch(err)
+        {
+            alert("An error occured, please try again")
+        }
+    }
+    fetchWishlistItems();
+},[WishListItemCount]);
+
     if(state){
       return(
         <>
@@ -37,8 +96,24 @@ function Navbar1() {
           <Navbar.Brand href="/" className='myBrand'>VS Shoppe</Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            
-            {/* <NavItem ><Nav.Link  className="categories" href="logout">logout</Nav.Link></NavItem>  */}
+
+          <NavItem>
+            <Link to="/wishlist" className="categories">
+              <FavoriteIcon />
+              {WishListItemCount > 0 && (
+                <span className="wishlist-count">{WishListItemCount}</span>
+              )}
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link to="/cart" className="categories">
+              <ShoppingCartIcon />
+              {cartItemCount > 0 && (
+                <span className="cart-count">{cartItemCount}</span>
+              )}
+            </Link>
+          </NavItem>
+
             <NavItem >
             <Dropdown style={{paddingRight:'20px'}}>
               <Dropdown.Toggle variant="dark" id="dropdown-basic">

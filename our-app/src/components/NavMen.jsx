@@ -14,7 +14,6 @@ import Deo from '../images/Essential/Deodrants.png'
 import Fossil from '../images/Premium/premium_fossil.png'
 import Gucci from '../images/Premium/premium_gucci.png'
 import Nike from '../images/Premium/premium_nike.png'
-// import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import {Link} from 'react-router-dom'
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
@@ -23,7 +22,6 @@ import Disclaimer from './disclaimer'
 import Navbar1 from './Navbar';
 
 import "../App.css"
-// import { margin } from '@mui/system'
 
 
 function Men(){

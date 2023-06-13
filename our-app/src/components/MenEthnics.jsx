@@ -3,7 +3,7 @@ import {MDBContainer} from "mdb-react-ui-kit";
 import "../App.css";
 import Navbar from './Navbar'
 import EthComp from "./Prod_Card";
-import ethnic_array from "./Ethnic_Array";
+import ethnic_array from "./MenEthnic_Array";
 
 
 function Ethnics() {

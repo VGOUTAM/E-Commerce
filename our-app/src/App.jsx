@@ -7,7 +7,7 @@ import Men from './components/NavMen'
 import Women from './components/NavWomen'
 import Kids from './components/NavKids'
 import Electronics from './components/NavElectronics'
-import Ethnics from './components/Ethnics'
+import Ethnics from './components/MenEthnics'
 import MenFormals from './components/MenFormals'
 import MenWinter from "./components/MenWinter"
 import MenShorts from './components/MenShorts'
@@ -18,6 +18,11 @@ import WomenLingerie from './components/Lingerie'
 import WomenTops from './components/WomenTops'
 import Logout from './components/Logout';
 import {reducer, initialState} from '../src/reducer/UseReducer.js'
+import EmptyCart from './components/EmptyCart'
+import EmptyWishlist from './components/EmptyWishlist'
+import WishList from './components/WishList'
+import Cart from './components/Cart'
+
 
 export const userContext = createContext();
 
@@ -37,6 +42,10 @@ function App(){
             <Route path= 'kids' element= {<Kids />}  />
             <Route path= 'electronics' element= {<Electronics />}  />
             <Route path= 'ethnics' element= {<Ethnics />}  />
+            <Route path= 'wishlist' element= {<WishList />}  />   
+            <Route path= 'emptyWishlist' element= {<EmptyWishlist />}  />   
+            <Route path= 'cart' element= {<Cart />}  />   
+            <Route path='emptyCart' element={<EmptyCart />}    />
             <Route path= 'menformals' element= {<MenFormals />}  />
             <Route path= 'winterwear' element= {<MenWinter />}  />
             <Route path= 'shorts' element= {<MenShorts />}  />
