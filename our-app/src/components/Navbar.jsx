@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {userContext} from  '../App.jsx'
-import React, {useContext,useEffect,useState} from 'react'
+import React, {useContext} from 'react'
 import PersonIcon from '@mui/icons-material/Person';
 import Dropdown from 'react-bootstrap/Dropdown';
 import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
