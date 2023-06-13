@@ -25,6 +25,7 @@ function Navbar1() {
   console.log(state)
   const RenderNavbar=()=>{
     
+    if(state){
     useEffect(()=>{
       console.log("Heyy I in cart's useEffect");
       const fetchcartItems=async()=> {
@@ -84,7 +85,6 @@ function Navbar1() {
     fetchWishlistItems();
 },[]);
 
-    if(state){
       return(
         <>
         <Navbar collapseOnSelect fixed="top" expand="sm" bg="dark" variant="dark">
