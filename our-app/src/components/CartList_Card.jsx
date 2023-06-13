@@ -17,7 +17,7 @@ function WishListCard(props)
             
             const token = localStorage.getItem('token');
             const res=await fetch("https://backendhost-2auk.onrender.com/deleteFromCart",{
-                mode:'cors',
+                mode:'no-cors',
                 method: 'POST',
                 credentials: 'include',	
                 headers: {

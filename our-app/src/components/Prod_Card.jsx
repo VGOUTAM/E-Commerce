@@ -25,7 +25,7 @@ function EthComp(props)
             console.log("This is token in frontend")
             console.log(token); 
             const res=await fetch('https://backendhost-2auk.onrender.com/addtocart',{
-                    mode : 'cors', 
+                    mode : 'no-cors', 
                     method: "POST",		
                     credentials: 'include',	
                     headers: {
@@ -72,7 +72,7 @@ function EthComp(props)
             console.log("This is token in frontend")
             console.log(token); 
             const res=await fetch('https://backendhost-2auk.onrender.com/addtowishlist',{
-                    mode : 'cors', 
+                    mode : 'no-cors', 
                     method: "POST",		
                     credentials: 'include',	
                     headers: {
