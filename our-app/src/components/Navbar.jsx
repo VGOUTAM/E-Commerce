@@ -49,6 +49,7 @@ function Navbar1() {
           }catch(err)
           {
               alert("An error occured, please try again")
+              console.log(err)
           }
       }
       fetchcartItems();
