@@ -29,7 +29,7 @@ function Navbar1() {
       console.log("Heyy I in cart's useEffect");
       const fetchcartItems=async()=> {
           try{
-              const response=await fetch('/getCartItems',{
+              const response=await fetch('https://backendhost-2auk.onrender.com/getCartItems',{
                   method:'GET',
                   headers: {
                       Authorization: `Bearer ${localStorage.getItem('token')}`,                        
@@ -58,7 +58,7 @@ function Navbar1() {
     console.log("Heyy I in wishlist's useEffect");
     const fetchWishlistItems=async()=> {
         try{
-            const response=await fetch('/getWishlistItems',{
+            const response=await fetch('https://backendhost-2auk.onrender.com/getWishlistItems',{
                 method:'GET',
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`,                        
