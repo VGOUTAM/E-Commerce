@@ -39,7 +39,7 @@ function Cart(){
             }
         }
         fetchcartItems();
-    },[cartItems]);
+    },[cartItems,navigate]);
     // console.log("This is one elemnet in array")
     // console.log(cartItems[0]);
     return (

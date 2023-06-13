@@ -52,7 +52,7 @@ function Navbar1() {
           }
       }
       fetchcartItems();
-  },[cartItemCount]);
+  },[]);
 
   useEffect(()=>{
     console.log("Heyy I in wishlist's useEffect");
@@ -81,7 +81,7 @@ function Navbar1() {
         }
     }
     fetchWishlistItems();
-},[WishListItemCount]);
+},[]);
 
     if(state){
       return(
