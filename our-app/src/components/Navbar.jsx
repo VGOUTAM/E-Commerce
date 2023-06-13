@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {userContext} from  '../App.jsx'
-import React, {useContext} from 'react'
+import React, {useContext,useEffect,useState} from 'react'
 import PersonIcon from '@mui/icons-material/Person';
 import Dropdown from 'react-bootstrap/Dropdown';
 import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
@@ -13,9 +13,13 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import LogoutIcon from '@mui/icons-material/Logout';
 import {Link} from 'react-router-dom' 
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+
 
 function Navbar1() {
   const {state, dispatch}= useContext(userContext)
+  const [cartItemCount, setCartItemCount] = useState(0)
+  const [WishListItemCount, setWishlistItemCount] = useState(0)
   console.log(dispatch)
   console.log("This is navbar")
   console.log(state)
